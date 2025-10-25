@@ -571,6 +571,6 @@ unsafe fn start() -> (
 pub unsafe fn main() {
     let main_loop_capability = create_capability!(capabilities::MainLoopCapability);
 
-    let (board_kernel, platform, chip) = start();
-    board_kernel.kernel_loop(&platform, chip, Some(&platform.ipc), &main_loop_capability);
+    //let (board_kernel, platform, chip) = start();
+    //board_kernel.kernel_loop(&platform, chip, Some(&platform.ipc), &main_loop_capability);
 }
